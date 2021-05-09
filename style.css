@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lora', serif;
+}
+h1{
+    
+    letter-spacing: 0.3rem;
+
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2rem;
+    
+}
+header{
+   padding: 2rem;
+    width: 100%;
+    position: relative;
+    background:linear-gradient(to top, blue,black);
+   
+    
+}
+.logo  i{
+    font-size: 5rem;
+    /* transform: rotateZ(45deg); */
+    color:orange;
+  
+   
+   
+}
+
+.logo a{
+    font-size: 3rem;
+    color: #fff;
+}
+.head{
+    min-height: 2rem;
+  width: 100%;
+
+}
+ #toggle
+{
+    width: 6rem;
+    height: 6rem;
+   background:linear-gradient(to bottom, blue,black) ;
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999;
+    
+}
+#toggle span{
+    width: 4rem;
+    height: 0.2rem;
+    background-color:#fff;
+    padding: 0.2rem;
+    display: flex;
+    margin: 3px;
+    
+
+}
+#toggle.active{
+background-color:aqua ;
+}
+
+ul{
+    display: flex;
+}
+ul li a{
+    font-size:1.5rem ;
+    color: #fff;
+    font-weight: bold;
+}
+#menu ul li, a{
+    font-size: 1.5rem;
+   
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 2rem;
+    font-weight: bold;
+    line-height: 50px;
+    transition: all .5s ease;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+
+
+    
+}
+
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#menu ul li:hover{
+    background-color:aqua;
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.15);
+
+}
+
+
+/* =======================
+     | SLIDEDR SECTION |
+=========================
+*/
+.slider{
+    min-width: 100%;
+    height: 700px;
+    position: relative;
+
+}
+
+
+
+
+.slider.carousel-item{
+    position: relative;
+}
+.slider .carousel-item img{
+    width: 100%;
+    height:60rem;
+
+}
+.slider .carousel-item .carousel-caption
+{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+
+}
+.slider .carousel-item .carousel-caption h1{
+    font-size: 5rem;
+    width: 40rem;
+    text-align: center;
+    margin: auto;
+   
+}
+.slider .carousel-item .carousel-caption p{
+    margin-bottom: 2rem;
+    line-height: 5rem;
+}
+
+
+
+
+.slider .action{
+
+    margin: auto;
+    padding: 2rem 3rem;
+    background:linear-gradient(to right,blue,black);
+
+    letter-spacing: 0.2rem;
+}
+
+
+
+
+
+
+
+/*  ============================
+     |   SERVICES SECTION| 
+   =============================
+*/
+.services{
+    margin-top:10px;
+    width: 100%;
+    height: 600px;
+   
+ 
+}
+
+
+.content
+{
+
+    min-height: 400px;
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#fff;
+    text-align: center;
+   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.096);
+   padding: 2rem 1rem;
+  
+}
+
+.content button
+{
+    display: inline;
+    width: 200px;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background:linear-gradient(to top, blue,black);
+    font-size: 2rem;
+    box-shadow: 0 0 2rem rgba(52, 11, 236, 0.295);
+    transition: all 0.4s;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+.content button:hover{
+    box-shadow: 0 0 2rem rgba(0,0,0,0.15);
+transform: scale(1.1);
+
+}
+
+.content .icon i{
+
+    font-size: 4rem;
+}
+
+.content .icon{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: aqua;
+    text-align: center;
+margin: auto;
+padding: 1rem;
+
+  
+
+}
+
+
+/* =======================
+     | GALLERY SECION |
+=========================
+*/
+
+
+.gallery{
+    width: 90%;
+    background-color: blue;
+
+  
+
+}
+
+/* =======================
+     | blog SECION |
+=========================
+*/
+
+
+.blog{
+    width: 100%;
+    height: 600px;
+
+  
+
+}
+
+
+.card
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 350px;
+    margin: 1rem;
+
+    margin-right: 0;
+
+}
+.card .card-admin
+{
+
+    padding: 1rem ;
+    text-align: left;
+}
+.card  .card-body
+{
+    width: 350px;
+    height: 233px;
+  
+    padding: 0!important;
+}
+.card  .card-body img{
+    width: 400px;
+    height: 100%;
+}
+.card .card-admin i{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.card .card-heading{
+    padding: 0.6rem 2rem;
+    font-size: 2.4rem;
+}
+.card .card-caption
+{
+    padding: 0.6rem 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+
+}
+.card .card-caption a:hover{
+    color: orange;
+}
+.card a{
+color:#111;
+font-weight: bold;
+}
+
+
+
+/* =======================
+     | CONTACT FORM |
+=========================
+*/
+.main{
+    width: 100%;
+    height: 70rem;
+    background-color: #111;
+    color: #fff;
+    position: relative;
+}
+.main form{
+    padding-top: 10rem;
+
+}
+
+.innerform
+{
+  border-radius: 0.5rem;
+padding: 1rem 0.5rem;
+  
+    width: 50rem;
+    height: 50rem;
+    margin: auto;
+    padding: 2rem 1rem;
+    background-color: #222;
+    filter: drop-shadow(5px);
+    
+    box-shadow: 0 0 3rem 0.5rem rgba(0,0,0,0.15);
+ position: relative;
+    z-index: 9999;
+    border-top: 2px solid magenta;
+   
+}
+
+.innerform .btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.innerform .btn button
+{
+  
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    transition: 0.4s ease;
+    outline: none;
+}
+.innerform .btn button:hover{
+    background-color: orange;
+}
+
+
+.innerform input[type=text]{
+    margin:1rem;
+    padding: 1rem 2rem;
+    border:none;
+    background-color:transparent;
+    border-bottom: 2px solid blue;
+    margin-left: 1rem;
+    outline: none;
+    color: #fff;
+    font-size: 2rem;
+    
+
+}
+.innerform ::placeholder{
+    font-size: 2rem;
+
+}
+.innerform label{
+    font-size: 2.5rem;
+}
+
+
+/* =======================
+     | GOOGLE MAP |
+=========================
+*/
+
+.map{
+    max-width: 100%;
+   
+    height: 500px;
+    overflow: hidden;
+
+}
+
+iframe{
+    min-width: 90%;
+    height: 400px;
+    margin: auto;
+
+}
+.loc-title h1{
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+
+}
+
+/* =======================
+     | FOOTER  SECTION |
+=========================
+*/
+footer{
+    padding-top: 100px;
+    width: 100%;
+    min-height: 600px;
+   
+    background-image: url(./images/footer.jpg);
+    
+    color: #fff;
+}
+.footer-caption p{
+font-size: 1.8rem;
+}
+footer form{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 50px;
+    
+ 
+    
+}
+footer .for{
+    border: 2px solid royalblue;
+}
+footer .input
+{
+    margin-top: 2rem;
+    width: 200px;
+   
+    
+    overflow: hidden;
+  
+    padding-left: 1rem;
+  
+    height: 100%;
+}
+footer ::placeholder{
+    font-size: 2rem;
+}
+footer input[type=text]{
+  
+    outline: none;
+border: none;
+background-color: transparent;
+    padding-left:1rem;
+    width: 200px;
+
+    font-size:2rem;
+    
+
+
+}
+form button{
+    border: none;
+    height: 100%;
+    
+    background-color: royalblue;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+
+/* =======================
+     | FOR TAB  REPONSIVE |
+=========================
+*/
+
+@media(max-width:992px){
+  
+    .content .item{
+        width: 50px;
+       
+    }
+    .main-head{
+     
+        flex-direction: column;
+      
+    }
+}
+
+
+/* =======================
+     | FOR SMALL DEVICES |
+=========================
+*/
+
+@media(max-width:767px){
+
+    html{
+        font-size: 58%;
+    }
+    .main-head{
+        height: 50px;
+    }
+    #toggle{
+        opacity: 1;
+        visibility:visible;
+      
+    }
+    #menu{
+        opacity: 0;
+        visibility: hidden;
+        transition:all 0.2s ease ;
+        background-color:#fff;
+        width: 100%;
+        
+        text-align: center;
+        z-index: 9999;
+    }
+    .logo{
+        width: 100%;
+        
+        
+        text-align:center ;
+      
+      
+    }
+    #menu.active{
+        opacity: 1;
+        visibility: visible;
+        margin-top: 50px;
+
+    }
+    #menu.active ul {
+        flex-direction: column;
+       
+      
+    }
+   
+    #menu ul li a{
+        text-align: center;
+        color: #111!important;
+    }
+    header  .main-head{
+        width:100% ;
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        position: relative;
+    }
+   
+  .blog{
+      width: 100%;
+      margin: auto;
+     /* display: flex;
+     justify-content: center;
+     align-items: center; */
+     
+     
+  }
+  footer{
+      padding: 0 5rem;
+  }
+
+  
+  .innerform{
+      width: 35rem;
+      text-align: center;
+
+  }
+
+  .main{
+    width: 100%;
+    height: 80rem;
+   
+}
+.main form{
+    padding-top: 11rem;
+}
+  
+.main .innerform{
+    height: 55rem;
+    min-width: 90%;
+}
+.blog{
+   
+    height: 1700px;
+    width: 100%;
+   
+
+    overflow: hidden;
+   
+}
+
+}
+
+
+
+/* =======================
+     | MOBILE REPONSIVE |
+=========================
+*/
+@media (max-width:568px){
+   
+    .logo{
+        
+      
+        width: 100%;
+
+    }
+    .logo a{
+       
+        text-align: left;
+        font-size: 2rem;
+        color: #111;
+
+      
+       
+    }
+    .slider{
+        width: 100%;
+        
+    }
+   
+    .slider{
+        min-width: 100%;
+        height: 500px;
+       
+    
+    }
+    
+
+    .slider .carousel-item img{
+        width: 100%;
+        height:40rem;
+    
+    }
+    .slider .carousel-item .carousel-caption
+{
+   
+    top: 10%;
+    text-align:left;
+    width: 30rem;
+    margin: auto;
+}
+.slider .carousel-item .carousel-caption h1
+{
+    font-size: 4rem;
+}
+.slider .carousel-item .carousel-caption p
+{
+    font-size: 3rem;
+    width: 30rem;
+}
+    
+.slider button{
+    display: none;
+}
+.gallery{
+    margin-top: 200px;
+    height: 100vh;
+
+}
+
+.blog{
+   
+    height: 1800px;
+    overflow: hidden;
+}
+
+
+}
+
+
+
+/* =======================
+     | SMALL DEVICES  |
+=========================
+*/
+@media(max-width:567px){
+    html{
+        font-size: 55%;
+    }
+ 
+   .logo{
+       
+       display: inline;
+       
+       left: 0;
+       width: 200px;
+   
+
+     
+   }
+   .logo a{
+       font-size: 2.5rem;
+       text-align: left;
+       display: inline;
+       color: #fff;
+   }
+
+   .services{
+    margin-top: 20px;
+
+   }
+   .services .content .item{
+       width: 90%;
+       margin: auto;
+   }
+ 
+   
+   .gallery img{
+    
+       width: 100%;
+      
+   }
+ .blog{
+     width: 90%;
+     margin: 0px  auto;
+ }
+ .card{
+     width: 35rem;
+     text-align: left;
+ }
+
+
+ .main{
+     width: 100%;
+ }
+ form{
+     width: 100%;
+ }
+
+ .main form label
+ {
+     font-size: 2rem;
+ }
+ .main form input[type=text]{
+     text-align: center;
+     margin-bottom: 1rem;
+     
+ }
+ .innerform .btn button
+ {
+     padding: 1rem 3rem ;
+     font-size: 2rem;
+     background: linear-gradient( blue,black);
+     transition: all 0.4s ease 0s;
+    
+     
+ }
+ @keyframes bgChange {
+     0%{
+        background: linear-gradient( orange,black);
+        animation-duration: 6s;
+     }
+     50%{
+
+        background: linear-gradient( magenta,red);
+        animation-duration: 6s;
+     }
+     
+
+     
+ }
+ .innerform .btn button:hover{
+    background: linear-gradient( black,blue);
+     
+ }
+ .main .innerform {
+    
+
+    background: linear-gradient( blue,black);
+    border: 2px solid blue;
+box-shadow: 0px 0px 4rem rgba(14, 17, 190, 0.363);
+animation: bgChange 8s  linear infinite; 
+transition: 6s ease;
+
+ }
+
+
+ .services{
+ 
+     height: 800px;
+     margin: auto;
+     width: 100%;
+ }
+
+ .services .content{
+     height: 700px;
+     width: 100%;
+ }
+ .gallery{
+     margin-top: 200px;
+     height: 100vh;
+ 
+ }
+
+ .blog{
+     
+     min-height: 1900px;
+     overflow: hidden;
+ }
+
+
+ .card .card-admin p{
+     font-size: 1.4rem;
+ }
+ .slider .carousel-item .carousel-caption{
+     text-align: center;
+     /* margin:0px  auto; */
+     /* width: 40rem; */
+     left: 2%;
+
+     
+ }
+ .slider .carousel-item .carousel-caption h1
+ {
+     font-size: 4rem;
+     text-align: left;
+ }
+ .slider .carousel-item .carousel-caption p
+ {
+     font-size: 2rem;
+     /* width: 30rem; */
+     text-align: center;
+     line-height: 3rem;
+ }
+
+
+
+}
+
+
